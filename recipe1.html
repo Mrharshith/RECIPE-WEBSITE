@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
+<title>Recipe Website</title> 
+ 
+<style> 
+  /* General Body Styling */ 
+  body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f8f8f8; 
+    color: #333; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  } 
+ 
+  /* Header Styling */ 
+  header { 
+    background-color: #ff6f61; 
+    color: white; 
+    padding: 20px; 
+    width: 100%; 
+    text-align: center;   
+  } 
+ 
+  .logo { 
+    font-size: 2rem; 
+    margin: 0; 
+  } 
+ 
+  nav ul { 
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 10px; 
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+  } 
+ 
+  nav ul a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+  } 
+ 
+  /* Recipes Section Styling */ 
+  .recipes { 
+    max-width: 800px; 
+    margin-top: 40px; 
+    padding: 20px; 
+    text-align: center; 
+  } 
+ 
+  .recipes h1 { 
+    color: #ff6f61; 
+    margin-bottom: 20px; 
+  } 
+ 
+  .recipe-section { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+  } 
+ 
+  /* Individual Recipe Card Styling */ 
+  .recipe-card { 
+    width: 100%; 
+    max-width: 300px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+  } 
+ 
+  .recipe-card img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+  } 
+ 
+  h2 { 
+    color: #333; 
+  
+    margin: 10px 0; 
+  } 
+ 
+  h4 { 
+    color: #666; 
+  } 
+ 
+  .ingredients-title, 
+        .instructions-title { 
+            text-align: center; /* Center the Ingredients and Instructions 
+headings */ 
+            color: #333; 
+            margin: 10px 0; 
+        } 
+ 
+        .ingredient, 
+        .instruction { 
+            text-align: left; /* Left-align individual ingredients and instructions 
+*/ 
+            color: #666; 
+            margin: 5px 0; 
+        } 
+  button { 
+    padding: 10px 20px; 
+    background-color: #ff6f61; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+  } 
+ 
+  button a { 
+    color: white; 
+    text-decoration: none; 
+  } 
+ 
+  button:hover { 
+    background-color: #f9dddb; 
+  } 
+ 
+  /* Footer Styling */ 
+  footer { 
+    width: 100%; 
+    padding: 20px; 
+    background-color: #333; 
+    color: white; 
+    margin-top: 40px; 
+    text-align: center; 
+  } 
+</style> 
+</head> 
+ 
+<body> 
+ 
+<!-- Header --> 
+<header> 
+    <h1 class="logo"><span style="font-family:Verdana, Geneva, 
+Tahoma, sans-serif"> DELICIOUS RECIPES </span></h1> 
+  <nav> 
+    <ul> 
+      <a href="index.html"><li>Home</li></a> 
+      <a href="#"><li>About</li></a> 
+      <a href="#"><li>Recipes</li></a> 
+      <a href="#"><li>Contact</li></a> 
+    </ul> 
+  </nav> 
+</header> 
+ 
+<!-- Recipe Section --> 
+<section class="recipes"> 
+  <h1>Featured Recipes</h1> 
+  <div class="recipe-section"> 
+    <!-- Recipe Card 1 --> 
+    <div class="recipe-card"> 
+      <img 
+src="https://tianmeds.github.io/ExpressEat/img/Omelette.webp" 
+alt="Egg Omelette"> 
+      <h2>Egg Omelette</h2> 
+      <h4 class="ingredients-title">Ingredients:</h4> 
+      <h4> 3 eggs, 1 tsp sunflower oil, 1 tsp butter</h4> 
+      <h4 class="instructions-title">Instructions:</h4> 
+      <h4>1. Beat the eggs: Use two or three eggs per omelette, depending 
+on how hungry you are. Beat the eggs lightly with a fork.</h4> 
+      <h4>2. Melt the butter: Use an 8-inch nonstick skillet for a 2-egg 
+omelette, a 9-inch skillet for 3 eggs. Melt the butter over medium-low 
+heat, and keep the temperature low and slow when cooking the eggs so 
+the bottom doesn’t get too brown or overcooked. </h4> 
+      <h4>3. Add the eggs: Let the eggs sit for a minute, then use a 
+heatproof silicone spatula to gently lift the cooked eggs from the edges of 
+the pan. Tilt the pan to allow the uncooked eggs to flow to the edge of the 
+pan.</h4> 
+      <h4>4. Fill the omelette: Add the filling but don’t overstuff the 
+omelette when the eggs begin to set. Cook for a few more seconds </h4> 
+      <h4>5. Fold and serve: Fold the omelette in half. Slide it onto a plate 
+with the help of a silicone spatula.</h4> 
+ 
+      <button><a 
+href="https://www.youtube.com/watch?v=E2nHfbzHDmY">WATCH 
+VIDEO</a></button> 
+    </div> 
+  </div> 
+</section> 
+ 
+<!-- Footer --> 
+<footer> 
+  <p>&copy; 2024 Delicious Recipes</p> 
+</footer> 
+ 
+</body> 
+</html>

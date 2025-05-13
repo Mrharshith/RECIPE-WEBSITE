@@ -1,0 +1,253 @@
+ 
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
+    <title>Recipe Website</title> 
+    <style> 
+        /* General Body Styling */ 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f5f5f5; 
+            color: #333; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        } 
+ 
+        /* Header Styling */ 
+        header { 
+            background-color: #ff6f61; 
+            color: white; 
+            padding: 20px; 
+            width: 100%; 
+            text-align: center; 
+        } 
+ 
+        .logo { 
+            font-size: 2rem; 
+            margin: 0; 
+        } 
+ 
+        nav ul { 
+            list-style-type: none; /* Remove default list styling */ 
+            padding: 0; 
+            margin-top: 10px; 
+            display: flex; 
+            gap: 20px; 
+            justify-content: center; 
+        } 
+ 
+        nav ul a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+        } 
+ 
+        /* Hero Section Styling */ 
+        .hero { 
+            background-color: #ffefef; 
+            padding: 40px; 
+            text-align: center; 
+            width: 100%; 
+        } 
+ 
+        .hero-section h2 { 
+            margin: 0; 
+            font-size: 2rem; 
+            color: #ff6f61; 
+        } 
+ 
+        .hero-section p { 
+            margin: 10px 0; 
+        } 
+ 
+        .search-box { 
+            margin-top: 20px; 
+        } 
+ 
+        .search-box input { 
+            padding: 10px; 
+            width: 200px; 
+        } 
+ 
+        .search-box button { 
+            padding: 10px 20px; 
+            background-color: #ff6f61; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        } 
+ 
+        /* Recipe Section Styling */ 
+        .recipes { 
+            margin-top: 40px; 
+            text-align: center; 
+            max-width: 800px; 
+        } 
+ 
+        .recipe-section { 
+            margin-top: 20px; 
+        } 
+ 
+        .recipe-card { 
+            width: 100%; 
+            max-width: 400px; 
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            background-color: #fff; 
+            padding: 20px; 
+            transition: transform 0.2s; 
+        } 
+ 
+        .recipe-card:hover { 
+            transform: scale(1.05); 
+        } 
+ 
+        .recipe-card img { 
+            width: 100%; 
+            height: 180px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+        } 
+        h2 { 
+            color: #333; 
+            margin: 10px 0; 
+            text-align: center; /* Center the title */ 
+        } 
+        h4 { 
+            color: #666; 
+            margin: 5px 0; 
+        } 
+        .ingredients-title, 
+        .instructions-title { 
+            text-align: center; /* Center the Ingredients and Instructions 
+headings */ 
+            color: #333; 
+            margin: 10px 0; 
+        } 
+        button { 
+            padding: 10px 20px; 
+            background-color: #ff6f61; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            margin-top: 10px; 
+        } 
+ 
+        button a { 
+            color: white; 
+            text-decoration: none; 
+        } 
+ 
+        button:hover { 
+            background-color: #f9dddb; 
+        } 
+ 
+        /* Footer Styling */ 
+        footer { 
+            width: 100%; 
+            padding: 20px; 
+            background-color: #333; 
+            color: white; 
+            margin-top: 40px; 
+            text-align: center; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+    <header> 
+        <div class="container"> 
+    <h1 class="logo"><span style="font-family:Verdana, Geneva, Tahoma, 
+sans-serif"> DELICIOUS RECIPES </span></h1> 
+            <nav> 
+                <ul class="nav-list"> 
+                    <a href="harshith.html"><li>Home</li></a> 
+                    <a href="#"><li>About</li></a> 
+                    <a href="#"><li>Recipes</li></a> 
+                    <a href="#"><li>Contact</li></a> 
+                </ul> 
+            </nav> 
+        </div> 
+    </header> 
+ 
+    <!-- Hero Section --> 
+    <section class="hero"> 
+        <div class="hero-section"> 
+            <h2>Welcome to our Recipe Collection!</h2> 
+            <p>Search mouth watering recipes to satisfy your craving.</p> 
+            <form action="#" class="search-box"> 
+                <input type="text" placeholder="Search Recipe"> 
+                <button type="submit">Search</button> 
+            </form> 
+        </div> 
+    </section> 
+ 
+    <!-- Recipe Section --> 
+    <section class="recipes"> 
+        <h1>Featured Recipes</h1> 
+        <div class="recipe-section">  
+            <div class="recipe-card"> 
+                <img 
+src="https://www.themealdb.com/images/media/meals/twspvx1511784937.jpg"
+ alt="Chocolate Soufflé"> 
+                <h2>Chocolate Soufflé</h2> 
+                 
+                <h4 class="ingredients-title">Ingredients:</h4> 
+                <h4>Single Cream - 142ml</h4> 
+                <h4>Caster Sugar - 25g</h4> 
+                <h4>Dark Chocolate - 100g</h4> 
+                <h4>Butter - 25g</h4> 
+                <h4>Butter - drizzle</h4> 
+                <h4>Caster Sugar - 50g</h4> 
+                <h4>Dark Chocolate - 175g</h4> 
+                <h4>Double Cream - 2 tbs</h4> 
+                <h4>Egg Yolks - 4</h4> 
+                <h4>Egg White - 5</h4> 
+                <h4>Double Cream - 2 tbs</h4> 
+                <h4>Icing Sugar - to serve</h4> 
+ 
+                <h4 class="instructions-title">Instructions:</h4> 
+                <h4>1. Heat oven to 220C/fan 200C/gas 7 and place a baking 
+tray on the top shelf. For the sauce, heat the cream and sugar until boiling. 
+Remove from the heat, stir in the chocolate and butter until melted, then 
+keep warm.</h4> 
+                <h4>2. Brush 6 x 150ml ramekins with melted butter, sprinkle 
+with the 2 tbsp caster sugar, then tip out any excess. Melt the chocolate and 
+cream in a bowl over a pan of simmering water, cool, then mix in the egg 
+yolks.</h4> 
+                <h4>3. Whisk the egg whites until they hold their shape, then add 
+the sugar, 1 tbsp at a time, whisking back to the same consistency. Mix a 
+spoonful into the chocolate, then gently fold in the rest. Working quickly, 
+fill the ramekins, wipe the rims clean and run your thumb around the 
+edges.</h4> 
+                <h4>4. Turn oven down to 200C/fan 180C/gas 6, place the 
+ramekins onto the baking tray, then bake for 8-10 mins until risen with a 
+slight wobble. Don’t open the oven door too early as this may make them 
+collapse.</h4> 
+                <h4>5. Once the soufflés are ready, dust with icing sugar, scoop a 
+small hole from their tops, then pour in some of the hot chocolate sauce. 
+Replace the lids and serve straight away.</h4>          
+                <button><a 
+href="https://www.youtube.com/watch?v=FWqfkUEWOTg">WATCH 
+VIDEO</a></button> 
+            </div> 
+        </div> 
+    </section> 
+    <!-- Footer --> 
+    <footer> 
+        <p>&copy; 2024 Delicious Recipes</p> 
+    </footer> 
+ 
+</body> 
+</html>
